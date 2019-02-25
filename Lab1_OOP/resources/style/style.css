@@ -1,0 +1,41 @@
+.button-pane {
+    -fx-max-width: 25;
+    -fx-max-height: 25;
+    -fx-min-width: 25;
+    -fx-min-height: 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 16 16;
+    -fx-background-position: center;
+}
+
+.butBack {
+    -fx-background-image: url(../image/back.png);
+}
+
+.butNew {
+    -fx-background-image: url(../image/new.png);
+}
+
+.butOpen {
+    -fx-background-image: url(../image/open.png);
+}
+
+.butSave {
+    -fx-background-image: url(../image/save.png);
+}
+
+.butExit {
+    -fx-background-image: url(../image/exit.png);
+}
+
+.butFind {
+    -fx-background-image: url(../image/find.png);
+}
+
+.butReplace {
+    -fx-background-image: url(../image/replace.png);
+}
+
+.password-field {
+    -fx-skin: 'sample.PasswordSkin'
+}

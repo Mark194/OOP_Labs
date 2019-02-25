@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="600.0" style=" -fx-background-color: transparent;" stylesheets="@../../../../../../resources/style/load.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.screen.saver.Controller">
+    <children>
+      <Pane disable="true" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <ImageView fitHeight="500.0" fitWidth="700.0" nodeOrientation="RIGHT_TO_LEFT" smooth="false">
+                  <image>
+                      <Image url="@../../../../../../resources/image/image.jpg" />
+                  </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+              </ImageView>
+         </children>
+      </Pane>
+        <ProgressBar fx:id="progressLoad" layoutX="200.0" layoutY="338.0" prefWidth="241.0" progress="0.0" styleClass="progress-bar">
+         <effect>
+            <InnerShadow height="10.0" radius="3.5425000000000004" width="6.17" />
+         </effect>
+      </ProgressBar>
+      <Label layoutX="36.0" layoutY="44.0" prefHeight="108.0" prefWidth="534.0" text="АЛГОРИТМЫ СОРТИРОВКИ" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="Resident Evil 7(RUS BY LYAJKA)" size="81.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
