@@ -1,4 +1,4 @@
-package main.screen.saver;
+package screen.saver;
 
 import javafx.application.Preloader;
 import javafx.fxml.FXMLLoader;
@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import sample.Main;
 
 public class StartScreen extends Preloader {
     private Stage stage;
@@ -13,8 +14,9 @@ public class StartScreen extends Preloader {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        System.out.println();
         this.stage = primaryStage;
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("screensaver.fxml"));
+        FXMLLoader loader = new FXMLLoader(Main.class.getClassLoader().getResource("fxml/screensaver.fxml"));
         Parent root = loader.load();
         controller = loader.getController();
         Scene scene = new Scene(root, 640, 400);

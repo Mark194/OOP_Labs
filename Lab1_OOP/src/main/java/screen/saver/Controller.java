@@ -1,4 +1,4 @@
-package main.screen.saver;
+package screen.saver;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ProgressBar;

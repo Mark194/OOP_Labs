@@ -1,16 +1,14 @@
-package main.message;
+package message;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import sample.Main;
 
 import java.io.File;
 
 public class MessageAlert implements Message{
-
-    private static final String FILE = "file:";
-    private static final String FOLDER = "\\resources\\image\\";
 
     File f = new File(".");
     public void showError(String message) {
@@ -19,10 +17,8 @@ public class MessageAlert implements Message{
         alert.setHeaderText(null);
         alert.setContentText(message);
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
-        stage.getIcons().add(new Image(new StringBuilder(FILE)
-                .append(f.getAbsolutePath())
-                .append(FOLDER)
-                .append("error.png").toString()));
+        stage.getIcons().add(new Image(Main.class.getClassLoader()
+                .getResource("image/error.png").toString()));
         alert.showAndWait();
     }
 
@@ -32,10 +28,8 @@ public class MessageAlert implements Message{
         alert.setHeaderText(null);
         alert.setContentText(message);
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
-        stage.getIcons().add(new Image(new StringBuilder(FILE)
-                .append(f.getAbsolutePath())
-                .append(FOLDER)
-                .append("message2.png").toString()));
+        stage.getIcons().add(new Image(Main.class.getClassLoader()
+                .getResource("image/message2.png").toString()));
         alert.showAndWait();
     }
 
@@ -43,10 +37,8 @@ public class MessageAlert implements Message{
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION, null, ButtonType.YES, ButtonType.NO);
         alert.setHeaderText(message);
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
-        stage.getIcons().add(new Image(new StringBuilder(FILE)
-                .append(f.getAbsolutePath())
-                .append(FOLDER)
-                .append("confirmation.png").toString()));
+        stage.getIcons().add(new Image(Main.class.getClassLoader()
+                .getResource("image/confirmation.png").toString()));
         alert.showAndWait();
         return alert;
     }

@@ -10,13 +10,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="600.0" style=" -fx-background-color: transparent;" stylesheets="@../../../../../../resources/style/load.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.screen.saver.Controller">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="600.0" style=" -fx-background-color: transparent;" stylesheets="@../style/load.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screen.saver.Controller">
     <children>
       <Pane disable="true" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
               <ImageView fitHeight="500.0" fitWidth="700.0" nodeOrientation="RIGHT_TO_LEFT" smooth="false">
                   <image>
-                      <Image url="@../../../../../../resources/image/image.jpg" />
+                      <Image url="@../image/image.jpg" />
                   </image>
                <cursor>
                   <Cursor fx:constant="DEFAULT" />

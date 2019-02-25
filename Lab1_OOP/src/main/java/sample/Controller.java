@@ -1,15 +1,16 @@
-package main;
+package sample;
 
-import main.data.OpenFile;
-import main.data.OpenTextFile;
-import main.data.SaveFile;
-import main.data.SaveFileText;
+
+import data.SaveFile;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import main.message.Message;
-import main.message.MessageAlert;
-import main.sorting.Sorting;
+import data.OpenFile;
+import data.OpenTextFile;
+import data.SaveFileText;
+import message.Message;
+import message.MessageAlert;
+import sorting.Sorting;
 
 import java.util.ArrayList;
 import java.util.Arrays;

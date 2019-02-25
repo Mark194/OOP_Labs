@@ -1,8 +1,8 @@
-package main.data;
+package data;
 
 import javafx.stage.FileChooser;
-import main.message.Message;
-import main.message.MessageAlert;
+import message.Message;
+import message.MessageAlert;
 
 import java.io.*;
 import java.util.*;

@@ -1,9 +1,9 @@
-package main.data;
+package data;
 
 import javafx.collections.ObservableList;
 import javafx.stage.DirectoryChooser;
-import main.message.Message;
-import main.message.MessageAlert;
+import message.Message;
+import message.MessageAlert;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -41,7 +41,7 @@ public class SaveFileText implements SaveFile {
     }
 
     public void setNumbers(ObservableList<Double> numbers) {
-        this.numbers = new ArrayList <>(numbers);
+        this.numbers = new ArrayList<>(numbers);
     }
 
 
