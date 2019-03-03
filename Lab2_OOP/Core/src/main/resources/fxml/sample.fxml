@@ -28,7 +28,7 @@
             </Label>
          </children>
       </Pane>
-      <Pane fx:id="paneProc" layoutX="25.0" layoutY="226.0">
+      <Pane fx:id="paneProc" onMouseClicked="#loadMicroProcessor" layoutX="25.0" layoutY="226.0">
          <children>
             <ImageView fitHeight="113.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                <image>
